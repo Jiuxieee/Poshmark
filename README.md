@@ -49,7 +49,7 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/metadata` | **GET** | Meta entry point | metadata |
+| `/metadata` | **GET** | 元入口点 | metadata |
 | `/metadata/all_brands_cache` | **GET** | Brand cache | metadata |
 | `/metadata/all_experience` | **GET** | 暂无说明 | metadata |
 | `/metadata/brand_and_canonical_catalog_slug` | **GET** | 暂无说明 | metadata |
@@ -58,7 +58,7 @@
 | `/metadata/domain_i18n` | **GET** | 暂无说明 | metadata |
 | `/metadata/experience` | **GET** | 暂无说明 | metadata |
 | `/metadata/my_size_set` | **GET** | 暂无说明 | metadata |
-| `/metadata/size_chart` | **GET** | Use /metadata/size_chart/{id} for a chart | metadata |
+| `/metadata/size_chart` | **GET** | 使用“/metadata/size_chart/{id}”来获取图表信息 | metadata |
 | `/vm-rest/metadata/catalog/colors` | **GET** | 获取可用颜色表 | metadata |
 
 </details>
@@ -73,7 +73,7 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/shares` | **POST** | Use /posts/{postId}/shares to share | shares |
+| `/shares` | **POST** | 使用“/posts/{postId}/shares”进行分享 | shares |
 
 </details>
 
@@ -102,15 +102,15 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/posts` | **GET** | Listing entry | posts |
+| `/posts` | **GET** | 列表条目 | posts |
 | `/posts/coming_soon` | **GET** | 暂无说明 | posts |
 | `/posts/comparables` | **GET** | 暂无说明 | posts |
 | `/posts/deep_inventory` | **GET** | 暂无说明 | posts |
-| `/posts/filtered` | **GET** | Search with filters | posts |
+| `/posts/filtered` | **GET** | 使用筛选条件进行搜索 | posts |
 | `/posts/filtered/potential_earnings` | **GET** | 暂无说明 | posts |
 | `/posts/liked` | **GET** | 暂无说明 | posts |
 | `/posts/liked/filtered` | **GET** | 暂无说明 | posts |
-| `/posts/liked/users` | **GET** | Users who liked a post (append /{postId}/likes/users for specific) | posts |
+| `/posts/liked/users` | **GET** | 喜欢了某条帖子的用户（若需针对特定帖子，请使用“/append/{postId}/likes/users”格式） | posts |
 | `/posts/potential_earnings` | **GET** | 暂无说明 | posts |
 | `/posts/purchased` | **GET** | 暂无说明 | posts |
 | `/posts/suggested/just_in` | **GET** | 暂无说明 | posts |
@@ -136,12 +136,12 @@
 |---|---|---|---|
 | `/moderation` | **GET** | 暂无说明 | moderation |
 | `/moderation/index` | **GET** | 暂无说明 | moderation |
-| `/moderation/post` | **GET** | GET /users/{userId}/moderation/post for review detail | moderation |
+| `/moderation/post` | **GET** | GET /users/{userId}/moderation/post 以获取待审核详情 | moderation |
 | `/moderation/store` | **GET** | 暂无说明 | moderation |
 | `/moderation/store/actions` | **GET** | 暂无说明 | moderation |
 | `/moderation/store/index` | **GET** | 暂无说明 | moderation |
 | `/moderation/store/mutations` | **GET** | 暂无说明 | moderation |
-| `/moderation_votes` | **POST** | Combine with /posts/{postId}/moderation_votes/{vote} | moderation |
+| `/moderation_votes` | **POST** | 与 /posts/{postId}/moderation_votes/{vote} 结合使用 | moderation |
 | `/vm-rest/posts/{postId}/admin_delete?reason={reason}&send_email={flag}` | **PUT** | 管理员删除商品（支持是否发邮件） | moderation |
 | `/vm-rest/posts/{postId}/moderation/{reason}/{decision}` | **PUT** | 提交审核结果（reason/decision 路径参数） | moderation |
 | `/vm-rest/users/{userId}/moderation/post` | **GET** | 获取审核详情（需 creator_id） | moderation |
@@ -263,8 +263,8 @@
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
 | `/brands/following` | **GET** | 暂无说明 | social |
-| `/followers` | **GET** | Combine with /users/{id}/followers | social |
-| `/following` | **GET** | Combine with /users/{id}/following | social |
+| `/followers` | **GET** | 与 /users/{id}/followers 结合使用 | social |
+| `/following` | **GET** | 与 /users/{id}/followers 结合使用 | social |
 | `/style_tags/following` | **GET** | 暂无说明 | social |
 
 </details>
@@ -298,9 +298,9 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/auth/users/access_token` | **POST** | Issue/refresh access token | auth |
+| `/auth/users/access_token` | **POST** | 更新/重新获取访问令牌 | auth |
 | `/auth/users/guest_viewed_posts` | **POST** | 暂无说明 | auth |
-| `/auth/users/session` | **GET** | Session check | auth |
+| `/auth/users/session` | **GET** | 会话检查 | auth |
 
 </details>
 
@@ -314,7 +314,7 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/comments` | **GET** | Use /posts/{postId}/comments for specific post | comments |
+| `/comments` | **GET** | 使用 “/posts/{postId}/comments” 路径来访问特定帖子的评论. | comments |
 | `/current/comments` | **GET** | 暂无说明 | comments |
 | `/vm-rest/posts/{postId}/comments` | **POST** | 添加评论 | comments |
 | `/vm-rest/posts/{postId}/comments/{commentId}` | **DELETE** | 删除评论 | comments |
@@ -332,7 +332,7 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/acknowledgements/acknowledged/comment_risk` | **PUT** | Acknowledge comment risk banner | acknowledgements |
+| `/acknowledgements/acknowledged/comment_risk` | **PUT** | 确认评论风险提示横幅 | acknowledgements |
 
 </details>
 
@@ -346,7 +346,7 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/validations/users/email` | **POST** | Validate email | validations |
+| `/validations/users/email` | **POST** | 验证电子邮件 | validations |
 | `/validations/users/referral_code` | **POST** | 暂无说明 | validations |
 | `/validations/users/signup` | **POST** | 暂无说明 | validations |
 
