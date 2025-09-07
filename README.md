@@ -35,7 +35,7 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `nan` | **POST** | Image upload (non vm-rest) | upload |
+| `暂无说明` | **POST** | Image upload (non vm-rest) | upload |
 
 </details>
 
@@ -51,13 +51,13 @@
 |---|---|---|---|
 | `/metadata` | **GET** | Meta entry point | metadata |
 | `/metadata/all_brands_cache` | **GET** | Brand cache | metadata |
-| `/metadata/all_experience` | **GET** | nan | metadata |
-| `/metadata/brand_and_canonical_catalog_slug` | **GET** | nan | metadata |
-| `/metadata/catalog/colors` | **GET** | nan | metadata |
-| `/metadata/catalog/departments` | **GET** | nan | metadata |
-| `/metadata/domain_i18n` | **GET** | nan | metadata |
-| `/metadata/experience` | **GET** | nan | metadata |
-| `/metadata/my_size_set` | **GET** | nan | metadata |
+| `/metadata/all_experience` | **GET** | 暂无说明 | metadata |
+| `/metadata/brand_and_canonical_catalog_slug` | **GET** | 暂无说明 | metadata |
+| `/metadata/catalog/colors` | **GET** | 暂无说明 | metadata |
+| `/metadata/catalog/departments` | **GET** | 暂无说明 | metadata |
+| `/metadata/domain_i18n` | **GET** | 暂无说明 | metadata |
+| `/metadata/experience` | **GET** | 暂无说明 | metadata |
+| `/metadata/my_size_set` | **GET** | 暂无说明 | metadata |
 | `/metadata/size_chart` | **GET** | Use /metadata/size_chart/{id} for a chart | metadata |
 | `/vm-rest/metadata/catalog/colors` | **GET** | 获取可用颜色表 | metadata |
 
@@ -87,8 +87,8 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/collections/posts/all` | **GET** | nan | collections |
-| `/collections/posts/feed/summary` | **GET** | nan | collections |
+| `/collections/posts/all` | **GET** | 暂无说明 | collections |
+| `/collections/posts/feed/summary` | **GET** | 暂无说明 | collections |
 
 </details>
 
@@ -103,19 +103,19 @@
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
 | `/posts` | **GET** | Listing entry | posts |
-| `/posts/coming_soon` | **GET** | nan | posts |
-| `/posts/comparables` | **GET** | nan | posts |
-| `/posts/deep_inventory` | **GET** | nan | posts |
+| `/posts/coming_soon` | **GET** | 暂无说明 | posts |
+| `/posts/comparables` | **GET** | 暂无说明 | posts |
+| `/posts/deep_inventory` | **GET** | 暂无说明 | posts |
 | `/posts/filtered` | **GET** | Search with filters | posts |
-| `/posts/filtered/potential_earnings` | **GET** | nan | posts |
-| `/posts/liked` | **GET** | nan | posts |
-| `/posts/liked/filtered` | **GET** | nan | posts |
+| `/posts/filtered/potential_earnings` | **GET** | 暂无说明 | posts |
+| `/posts/liked` | **GET** | 暂无说明 | posts |
+| `/posts/liked/filtered` | **GET** | 暂无说明 | posts |
 | `/posts/liked/users` | **GET** | Users who liked a post (append /{postId}/likes/users for specific) | posts |
-| `/posts/potential_earnings` | **GET** | nan | posts |
-| `/posts/purchased` | **GET** | nan | posts |
-| `/posts/suggested/just_in` | **GET** | nan | posts |
-| `/posts/top_sold` | **GET** | nan | posts |
-| `/posts/viewed` | **GET** | nan | posts |
+| `/posts/potential_earnings` | **GET** | 暂无说明 | posts |
+| `/posts/purchased` | **GET** | 暂无说明 | posts |
+| `/posts/suggested/just_in` | **GET** | 暂无说明 | posts |
+| `/posts/top_sold` | **GET** | 暂无说明 | posts |
+| `/posts/viewed` | **GET** | 暂无说明 | posts |
 | `/vm-rest/posts/{postId}` | **GET** | 获取商品详情 | posts |
 | `/vm-rest/posts/{postId}/feed` | **GET** | 获取商品详情页底部动态Feed | posts |
 | `/vm-rest/posts/{postId}/related/posts` | **GET** | 相似/相关商品（支持 summarize、count 参数） | related |
@@ -134,13 +134,13 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/moderation` | **GET** | nan | moderation |
-| `/moderation/index` | **GET** | nan | moderation |
+| `/moderation` | **GET** | 暂无说明 | moderation |
+| `/moderation/index` | **GET** | 暂无说明 | moderation |
 | `/moderation/post` | **GET** | GET /users/{userId}/moderation/post for review detail | moderation |
-| `/moderation/store` | **GET** | nan | moderation |
-| `/moderation/store/actions` | **GET** | nan | moderation |
-| `/moderation/store/index` | **GET** | nan | moderation |
-| `/moderation/store/mutations` | **GET** | nan | moderation |
+| `/moderation/store` | **GET** | 暂无说明 | moderation |
+| `/moderation/store/actions` | **GET** | 暂无说明 | moderation |
+| `/moderation/store/index` | **GET** | 暂无说明 | moderation |
+| `/moderation/store/mutations` | **GET** | 暂无说明 | moderation |
 | `/moderation_votes` | **POST** | Combine with /posts/{postId}/moderation_votes/{vote} | moderation |
 | `/vm-rest/posts/{postId}/admin_delete?reason={reason}&send_email={flag}` | **PUT** | 管理员删除商品（支持是否发邮件） | moderation |
 | `/vm-rest/posts/{postId}/moderation/{reason}/{decision}` | **PUT** | 提交审核结果（reason/decision 路径参数） | moderation |
@@ -159,23 +159,23 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/offers/accepted` | **GET** | nan | offers |
-| `/offers/active` | **GET** | nan | offers |
-| `/offers/declined` | **GET** | nan | offers |
-| `/offers/feed` | **GET** | nan | offers |
-| `/offers/for_guest` | **GET** | nan | offers |
-| `/offers/for_me` | **GET** | nan | offers |
-| `/offers/help` | **GET** | nan | offers |
-| `/offers/my_offers` | **GET** | nan | offers |
-| `/offers/sent_to_me` | **GET** | nan | offers |
-| `/offers/sent_to_others` | **GET** | nan | offers |
-| `/offers/user` | **GET** | nan | offers |
-| `/offers/user/activity` | **GET** | nan | offers |
-| `/offers/user/counter` | **POST** | nan | offers |
-| `/offers/user/decline` | **POST** | nan | offers |
-| `/offers/user/price_suggestions` | **GET** | nan | offers |
-| `/offers/user/send` | **POST** | nan | offers |
-| `/offers_help` | **GET** | nan | offers |
+| `/offers/accepted` | **GET** | 暂无说明 | offers |
+| `/offers/active` | **GET** | 暂无说明 | offers |
+| `/offers/declined` | **GET** | 暂无说明 | offers |
+| `/offers/feed` | **GET** | 暂无说明 | offers |
+| `/offers/for_guest` | **GET** | 暂无说明 | offers |
+| `/offers/for_me` | **GET** | 暂无说明 | offers |
+| `/offers/help` | **GET** | 暂无说明 | offers |
+| `/offers/my_offers` | **GET** | 暂无说明 | offers |
+| `/offers/sent_to_me` | **GET** | 暂无说明 | offers |
+| `/offers/sent_to_others` | **GET** | 暂无说明 | offers |
+| `/offers/user` | **GET** | 暂无说明 | offers |
+| `/offers/user/activity` | **GET** | 暂无说明 | offers |
+| `/offers/user/counter` | **POST** | 暂无说明 | offers |
+| `/offers/user/decline` | **POST** | 暂无说明 | offers |
+| `/offers/user/price_suggestions` | **GET** | 暂无说明 | offers |
+| `/offers/user/send` | **POST** | 暂无说明 | offers |
+| `/offers_help` | **GET** | 暂无说明 | offers |
 | `/vm-rest/posts/{postId}/seller_offer` | **POST** | 卖家出价（支持折扣/运费优惠） | offers |
 | `/vm-rest/users/{userId}/posts/{postId}/offers` | **POST** | 买家出价（offer_amount、products、支付方式等） | offers |
 
@@ -206,9 +206,9 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/likes` | **GET** | nan | likes |
-| `/likes/users` | **GET** | nan | likes |
-| `/likes/users/offers` | **GET** | nan | likes |
+| `/likes` | **GET** | 暂无说明 | likes |
+| `/likes/users` | **GET** | 暂无说明 | likes |
+| `/likes/users/offers` | **GET** | 暂无说明 | likes |
 | `/vm-rest/posts/{postId}/likes` | **DELETE** | 取消点赞 | likes |
 | `/vm-rest/posts/{postId}/likes` | **POST** | 点赞商品 | likes |
 | `/vm-rest/posts/{postId}/likes?count={count}&max_id={maxId}` | **GET** | 获取点赞用户分页 | likes |
@@ -225,13 +225,13 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/users/community_feed` | **GET** | nan | users |
-| `/users/filtered` | **GET** | nan | users |
-| `/users/self/certificates/retail` | **GET** | nan | users |
-| `/users/self/closet_stats` | **GET** | nan | users |
-| `/users/suggested` | **GET** | nan | users |
-| `/users/suggested/activities/feed` | **GET** | nan | users |
-| `/users/update_ui_cookie` | **POST** | nan | users |
+| `/users/community_feed` | **GET** | 暂无说明 | users |
+| `/users/filtered` | **GET** | 暂无说明 | users |
+| `/users/self/certificates/retail` | **GET** | 暂无说明 | users |
+| `/users/self/closet_stats` | **GET** | 暂无说明 | users |
+| `/users/suggested` | **GET** | 暂无说明 | users |
+| `/users/suggested/activities/feed` | **GET** | 暂无说明 | users |
+| `/users/update_ui_cookie` | **POST** | 暂无说明 | users |
 | `/vm-rest/users/{listerId}` | **GET** | 获取卖家信息 | users |
 | `/vm-rest/users/{listerId}/posts?exp=all&base_exp=all&app_version=2.55&summarize=true&count={N}` | **GET** | 获取卖家 Closet 商品 | users |
 
@@ -247,8 +247,8 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/related/posts/feed` | **GET** | nan | related |
-| `/related/posts/just_in` | **GET** | nan | related |
+| `/related/posts/feed` | **GET** | 暂无说明 | related |
+| `/related/posts/just_in` | **GET** | 暂无说明 | related |
 
 </details>
 
@@ -262,10 +262,10 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/brands/following` | **GET** | nan | social |
+| `/brands/following` | **GET** | 暂无说明 | social |
 | `/followers` | **GET** | Combine with /users/{id}/followers | social |
 | `/following` | **GET** | Combine with /users/{id}/following | social |
-| `/style_tags/following` | **GET** | nan | social |
+| `/style_tags/following` | **GET** | 暂无说明 | social |
 
 </details>
 
@@ -279,12 +279,12 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `/orders` | **GET** | nan | orders |
-| `/orders/filters` | **GET** | nan | orders |
-| `/orders/help` | **GET** | nan | orders |
-| `/orders/labels` | **GET** | nan | orders |
-| `/orders/notifications` | **GET** | nan | orders |
-| `/orders/returns` | **GET** | nan | orders |
+| `/orders` | **GET** | 暂无说明 | orders |
+| `/orders/filters` | **GET** | 暂无说明 | orders |
+| `/orders/help` | **GET** | 暂无说明 | orders |
+| `/orders/labels` | **GET** | 暂无说明 | orders |
+| `/orders/notifications` | **GET** | 暂无说明 | orders |
+| `/orders/returns` | **GET** | 暂无说明 | orders |
 
 </details>
 
@@ -299,7 +299,7 @@
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
 | `/auth/users/access_token` | **POST** | Issue/refresh access token | auth |
-| `/auth/users/guest_viewed_posts` | **POST** | nan | auth |
+| `/auth/users/guest_viewed_posts` | **POST** | 暂无说明 | auth |
 | `/auth/users/session` | **GET** | Session check | auth |
 
 </details>
@@ -315,7 +315,7 @@
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
 | `/comments` | **GET** | Use /posts/{postId}/comments for specific post | comments |
-| `/current/comments` | **GET** | nan | comments |
+| `/current/comments` | **GET** | 暂无说明 | comments |
 | `/vm-rest/posts/{postId}/comments` | **POST** | 添加评论 | comments |
 | `/vm-rest/posts/{postId}/comments/{commentId}` | **DELETE** | 删除评论 | comments |
 | `/vm-rest/users/{userId}/reported/posts/{postId}/comments/{commentId}?reason={reason}` | **PUT** | 举报评论（需 userId） | comments |
@@ -347,8 +347,8 @@
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
 | `/validations/users/email` | **POST** | Validate email | validations |
-| `/validations/users/referral_code` | **POST** | nan | validations |
-| `/validations/users/signup` | **POST** | nan | validations |
+| `/validations/users/referral_code` | **POST** | 暂无说明 | validations |
+| `/validations/users/signup` | **POST** | 暂无说明 | validations |
 
 </details>
 
