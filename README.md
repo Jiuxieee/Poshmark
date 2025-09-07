@@ -35,7 +35,7 @@
 
 | 接口路径 | 请求方式 | 说明 | 英文分类 |
 |---|---|---|---|
-| `暂无说明` | **POST** | Image upload (non vm-rest) | upload |
+| `暂无说明` | **POST** | 图片上传（非 vm-rest 方式） | upload |
 
 </details>
 
